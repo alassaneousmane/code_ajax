@@ -1,7 +1,5 @@
 <?php
-include_once("Controller/Header.class.php");
-include_once("Controller/Nav.class.php");
-include_once("Controller/Footer.class.php");
+// N'oubliez pas d'inclure vos fichiers de dépendances ici
 
 ?>
 
@@ -40,12 +38,6 @@ include_once("Controller/Footer.class.php");
     </div>
     <textarea id="textarea1" class="chat-content-input" autofocus name="chat-content-input"></textarea>
 </div>
-
-
-
-
-
-
 
 
 <!--  Scripts-->
@@ -106,7 +98,7 @@ include_once("Controller/Footer.class.php");
         //$('a[data-background-color]).on('click', function(){
 
         //});
-        var backgroundColor;
+        
         $('#textarea1').val('');
         $('#textarea1').trigger('autoresize');
         // Initialize collapse button
