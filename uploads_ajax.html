@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="processupload.php" method="post" enctype="multipart/form-data" id="MyUploadForm">
+<input name="FileInput" id="FileInput" type="file" />
+<input type="submit"  id="submit-btn" value="Upload" />
+<img src="images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+</form>
+<div id="progressbox" ><div id="progressbar"></div ><div id="statustxt">0%</div></div>
+<div id="output"></div>
+
+ <!--  Scripts-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.form.js"></script>
+  <script type="text/javascript" src="assets/js/popup_chat.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script src="materialize/js/init.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript" src="Libraries/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="Libraries/jquery.nicescroll.340/jquery.nicescroll.min.js"></script>
+   <script type="text/javascript" src="assets/js/script_robot.js"></script>
+   <script type="text/javascript" src="Libraries/sweetalert/sweetalert.min.js"></script>
+  <script type="text/javascript">
+  </script>
+</body>
+</html>
