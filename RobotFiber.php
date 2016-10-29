@@ -106,7 +106,7 @@ include_once("Controller/Footer.class.php");
         //$('a[data-background-color]).on('click', function(){
 
         //});
-        var backgroundColor
+        var backgroundColor;
         $('#textarea1').val('');
         $('#textarea1').trigger('autoresize');
         // Initialize collapse button
