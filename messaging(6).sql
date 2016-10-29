@@ -142,17 +142,7 @@ CREATE TABLE `imessaging` (
   `file_attach` mediumblob
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Contenu de la table `imessaging`
---
 
-INSERT INTO `imessaging` (`destinationID`, `sourceID`, `content`, `seen`, `created_at`, `avatar`, `file_attach`) VALUES
-(15, 3, 'D''accord', '0', '2016-06-01 17:32:30', NULL, NULL),
-(15, 3, 'Je vais te faire un bon truc', '0', '2016-06-01 17:32:39', NULL, NULL),
-(15, 3, 'D''accord', '0', '2016-06-01 17:39:22', NULL, NULL),
-(15, 3, 'Mais je ne vais pas te donner Ã§a', '0', '2016-06-01 17:39:33', NULL, NULL),
-(15, 3, 'Je suis occupÃ© en fait', '0', '2016-06-01 17:39:40', NULL, NULL),
-(15, 1, '1462174227.csv', '0', '2016-06-02 10:58:02', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -193,31 +183,7 @@ CREATE TABLE `notifications` (
 -- Contenu de la table `notifications`
 --
 
-INSERT INTO `notifications` (`id`, `subject_id`, `name`, `user_id`, `created_at`, `seen`) VALUES
-(1, 362, 'friend_request_sent', 363, '2015-09-07 15:07:14', '1'),
-(2, 363, 'friend_request_accepted', 362, '2015-09-07 15:23:48', '1'),
-(3, 363, 'friend_request_sent', 364, '2015-09-07 15:32:20', '1'),
-(4, 362, 'friend_request_sent', 364, '2015-09-07 15:32:26', '1'),
-(5, 364, 'friend_request_accepted', 363, '2015-09-07 15:34:18', '1'),
-(6, 366, 'friend_request_sent', 365, '2015-09-07 15:42:09', '1'),
-(7, 364, 'friend_request_sent', 365, '2015-09-07 15:42:15', '1'),
-(8, 363, 'friend_request_sent', 365, '2015-09-07 15:42:19', '1'),
-(9, 362, 'friend_request_sent', 365, '2015-09-07 15:42:23', '1'),
-(10, 365, 'friend_request_accepted', 366, '2015-09-07 15:42:41', '1'),
-(11, 364, 'friend_request_sent', 366, '2015-09-07 15:42:50', '1'),
-(12, 363, 'friend_request_sent', 366, '2015-09-07 15:42:54', '1'),
-(13, 362, 'friend_request_sent', 366, '2015-09-07 15:42:57', '1'),
-(14, 365, 'friend_request_accepted', 366, '2015-09-07 15:43:01', '1'),
-(15, 366, 'friend_request_accepted', 363, '2015-09-07 15:43:18', '1'),
-(16, 365, 'friend_request_accepted', 363, '2015-09-07 15:43:23', '1'),
-(17, 366, 'friend_request_accepted', 364, '2015-09-07 15:43:51', '1'),
-(18, 365, 'friend_request_accepted', 364, '2015-09-07 15:43:54', '1'),
-(19, 366, 'friend_request_accepted', 362, '2015-09-07 15:48:38', '1'),
-(20, 365, 'friend_request_accepted', 362, '2015-09-07 15:48:42', '1'),
-(21, 364, 'friend_request_accepted', 362, '2015-09-07 15:48:49', '1'),
-(22, 363, 'friend_request_accepted', 362, '2015-09-07 15:48:55', '1'),
-(23, 366, 'friend_request_accepted', 363, '2015-09-07 16:26:13', '1'),
-(24, 415, 'friend_request_sent', 363, '2015-09-09 00:06:46', '0');
+
 
 -- --------------------------------------------------------
 
@@ -283,15 +249,6 @@ CREATE TABLE `users` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Contenu de la table `users`
---
-
-INSERT INTO `users` (`id`, `pseudo`, `password`, `actived`, `avatar`, `created_at`) VALUES
-(1, 'User1', '7c4a8d09ca3762af61e59520943dc26494f8941b', '1', 'assets/pictures/Tux_icon.svg', '2016-03-18 13:55:29'),
-(2, 'User2', '7c4a8d09ca3762af61e59520943dc26494f8941b', '1', 'assets/pictures/richard.jpg', '2016-03-18 13:58:55'),
-(3, 'User3', '7c4a8d09ca3762af61e59520943dc26494f8941b', '1', 'assets/pictures/tux.png', '2016-03-21 09:21:12'),
-(15, 'User4', '7c4a8d09ca3762af61e59520943dc26494f8941b', '1', 'assets/pictures/FiberTB.jpg', '2016-04-20 11:54:17');
 
 --
 -- Index pour les tables exportées
